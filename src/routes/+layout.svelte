@@ -51,7 +51,7 @@
 </script>
 
 <svelte:head>
-	<title>MAKE WEB FUN AGAIN</title>
+	<title>Functorial Memory</title>
 	<meta
 		name="description"
 		content="Der logische Aufbau der Web."
@@ -64,11 +64,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-{#if Geometry}
+<!-- {#if Geometry}
     <svelte:component this={Geometry} />
 {:else}
     <div class="loading">loading.</div>
-{/if}
+{/if} -->
 
 <main>
 	<header>
@@ -79,11 +79,11 @@
 		<slot />
 	</body>
 
-	{#if $screenType==3}
+	<!-- {#if $screenType==3}
 	<footer>
 		<Footer />
 	</footer>
-	{/if}
+	{/if} -->
 	
 </main>
 
@@ -105,12 +105,12 @@
 		z-index: 1;
 	}
 
-	footer {
+	/* footer {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 
-	}
+	} */
 
 	body {
 		display: flex;
