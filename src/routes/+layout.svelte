@@ -51,7 +51,7 @@
 </script>
 
 <svelte:head>
-	<title>Functorial Memory</title>
+	<title>Topological Memory</title>
 	<meta
 		name="description"
 		content="Der logische Aufbau der Web."

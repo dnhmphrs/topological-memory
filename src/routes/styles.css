@@ -2,8 +2,8 @@
 @import '$lib/styles/fonts.css';
 
 :root {
-	--font-header: nb-television, serif;
-	--font-body: nb-architekt, serif;
+	--font-header: untitled-serif, serif;
+	--font-body: untitled-serif, serif;
 	--column-width: 42rem;
 	--margin: 20px;
 
@@ -52,7 +52,7 @@
 	text-transform: none;
 	letter-spacing: 0.1em;
 	line-height: 150%;
-	font-size: 12px;
+	font-size: 14px;
 	color: #232323;
 }
 
@@ -85,6 +85,7 @@ h6 {
 	font-family: var(--font-header);
 	letter-spacing: 0.1em;
 	margin: 0;
+	font-weight: 700;
 }
 
 h1 {
@@ -122,6 +123,7 @@ button:focus:not(:focus-visible) {
 	white-space: nowrap;
 }
 
+
 @media only screen and (max-width: 768px) {
 	h1 {
 		font-size: 18px;
@@ -136,3 +138,4 @@ button:focus:not(:focus-visible) {
 		font-size: 13px;
 	}
 }
+
