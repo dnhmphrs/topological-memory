@@ -1,79 +1,33 @@
 @import 'normalize.css';
-@import '$lib/styles/fonts.css';
 
 :root {
-	--font-header: untitled-serif, serif;
-	--font-body: untitled-serif, serif;
-	--column-width: 42rem;
-	--margin: 20px;
+	--font-body: Georgia, 'Times New Roman', serif;
+	--font-math: 'STIX Two Math', 'Times New Roman', serif;
+	--font-mono: 'Courier New', monospace;
 
-	font-family: var(--font-body);
-	color: var(--primary);
-	--border: 1px solid var(--background);
+	--text-color: #000;
+	--bg-color: #fff;
+	--link-color: #0000ee;
+	--link-visited: #551a8b;
+
+	--max-width: 650px;
+	--line-height: 1.6;
 }
 
-:root {
-	--background: #232323;
-	--background-50: #23232380;
-	--primary: #d0d0d0;
-	--primary-50: #d0d0d080;
-
-	--green: #008080;
-	--white: #fafafa;
-	--black: #1b1b1b;
-
-	--border: solid 1px var(--background);
-}
-
-:root.dark-mode {
-	--background: #d0d0d0;
-	--background-50: #d0d0d080;
-	--primary: #232323;
-	--primary-50: #23232380;
-}
-
-/* body {
-	margin: 0;
-	background-attachment: fixed;
-	background-color: var(--background);
-	background-size: 100% 100%;
-	background: linear-gradient(var(--background), var(--background));
-} */
-
-*,
-*::before,
-*::after {
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-
-	font-weight: 400;
-	color: var(--primary);
-	text-transform: none;
-	letter-spacing: 0.1em;
-	line-height: 150%;
-	font-size: 14px;
-	color: #232323;
 }
 
-/* ::-webkit-scrollbar {
-	display: none;
-}
-
-html {
-	scrollbar-width: none;
-	-ms-overflow-style: none;
-} */
-
-::-moz-selection {
-	/* Code for Firefox */
-	color: red;
-	background: yellow;
-}
-
-::selection {
-	color: red;
-	background: yellow;
+body {
+	font-family: var(--font-body);
+	font-size: 16px;
+	line-height: var(--line-height);
+	color: var(--text-color);
+	background: var(--bg-color);
+	margin: 0;
+	padding: 20px;
 }
 
 h1,
@@ -82,60 +36,63 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-header);
-	letter-spacing: 0.1em;
-	margin: 0;
-	font-weight: 700;
+	font-weight: normal;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	line-height: 1.2;
 }
 
 h1 {
-	font-size: 22px;
-	font-weight: 400;
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 a {
-	text-decoration: none;
-}
-
-a:hover {
+	color: var(--link-color);
 	text-decoration: underline;
 }
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
+a:visited {
+	color: var(--link-visited);
 }
 
-button:focus:not(:focus-visible) {
-	outline: none;
+ul,
+ol {
+	margin-bottom: 1em;
+	padding-left: 2em;
 }
 
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
+li {
+	margin-bottom: 0.5em;
 }
 
-
-@media only screen and (max-width: 768px) {
-	h1 {
-		font-size: 18px;
-		font-weight: 400;
-	}
-
-	p,
-	a {
-		font-weight: 400;
-		text-transform: none;
-		letter-spacing: 0.08em;
-		font-size: 13px;
-	}
+hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 2em 0;
 }
 
+/* Math styling */
+.math {
+	font-family: var(--font-math);
+}
+
+code {
+	font-family: var(--font-mono);
+	font-size: 0.9em;
+}
+
+/* Remove all the custom styling */
+::selection {
+	background: #b3d4fc;
+	color: #000;
+}
