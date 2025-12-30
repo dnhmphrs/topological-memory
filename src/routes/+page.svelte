@@ -23,9 +23,9 @@
   </nav>
 
   <Intro />
+  <Space />
   <FunctorialMemory />
   <NeuralImplementation />
-  <Space />
 
   <section id="references">
     <h2>References</h2>

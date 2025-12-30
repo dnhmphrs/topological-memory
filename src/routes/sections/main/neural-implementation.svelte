@@ -1,10 +1,10 @@
 <section id="neural-implementation">
-  <h2>3. Neural Implementation</h2>
+  <h2>4. Neural Implementation</h2>
 
-  <h3>3.1 Place Cells as Stalks</h3>
+  <h3>4.1 Place Cells as Stalks</h3>
 
   <p>
-    <strong>Lemma 3.1.</strong> Each place cell <span class="math">i</span> with
+    <strong>Lemma 4.1.</strong> Each place cell <span class="math">i</span> with
     receptive field <span class="math">U<sub>i</sub> ⊆ X</span> encodes elements
     of the stalk <span class="math">𝒪<sub>X,p<sub>i</sub></sub></span> where
     <span class="math">p<sub>i</sub></span> is the field center.
@@ -16,10 +16,10 @@
     Two observables yielding the same firing pattern represent the same germ. □
   </p>
 
-  <h3>3.2 Sheaf Conditions</h3>
+  <h3>4.2 Sheaf Conditions</h3>
 
   <p>
-    <strong>Theorem 3.2.</strong> Recurrent hippocampal connectivity implements the
+    <strong>Theorem 4.2.</strong> Recurrent hippocampal connectivity implements the
     sheaf gluing axiom.
   </p>
 
@@ -34,7 +34,7 @@
   </ol>
 
   <p>
-    <strong>Corollary 3.3.</strong> Hippocampal lesions disrupt spatial coherence by
+    <strong>Corollary 4.3.</strong> Hippocampal lesions disrupt spatial coherence by
     preventing the gluing of local observations into global representations.
   </p>
 </section>
